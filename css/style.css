@@ -67,6 +67,12 @@ header .topbar .button {
     color: #30526C;
     font-family: "Kanit", sans-serif;
     font-weight: 8px;
+    padding-bottom: 5px;
+}
+
+.subjects-icon {
+    margin-right: 15px;
+    float: left;
 }
 
 .topics-body {
@@ -156,3 +162,4 @@ li {
     margin-top: -1em;
     width: 0.5em;
 }
+

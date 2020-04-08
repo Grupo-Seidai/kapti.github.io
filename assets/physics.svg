@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 12.7 12.7"
+   height="48"
+   width="48">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="display:inline"
+     transform="translate(0,-284.29998)"
+     id="layer1">
+    <circle
+       r="6.0914688"
+       cy="290.64999"
+       cx="6.3499999"
+       id="path815"
+       style="fill:none;stroke:#ff3a20;stroke-width:0.51699585;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       id="path817-5"
+       d="m 8.2810887,290.78771 c 0.389067,2.34273 -0.8050204,4.29565 -2.5681793,4.79809 -2.1516321,0.61313 -2.2251381,-1.5241 -3.2886972,-3.64743 -0.9627252,-1.92203 0.072357,-4.52913 1.8797767,-4.83631 1.8074252,-0.30718 3.5880317,1.34293 3.9770998,3.68565 z"
+       style="fill:#ff3a20;fill-rule:nonzero;stroke:none;stroke-width:7.2473588;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+    <path
+       id="path817-5-6"
+       d="m 4.4189115,290.79053 c -0.389067,2.34273 0.8050204,4.29565 2.5681792,4.79809 2.1516322,0.61313 2.2251382,-1.5241 3.2886973,-3.64743 0.962725,-1.92203 -0.07236,-4.52913 -1.8797767,-4.83631 -1.8074252,-0.30718 -3.5880317,1.34293 -3.9770998,3.68565 z"
+       style="display:inline;fill:#ff3a20;fill-rule:nonzero;stroke:none;stroke-width:7.2473588;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1" />
+    <path
+       id="path4597"
+       d="m 6.3984816,287.75623 c -0.2256287,-0.8541 0.5248152,-1.74341 1.1634538,-1.9566"
+       style="fill:none;fill-rule:nonzero;stroke:#566e3d;stroke-width:0.38820505;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
+  </g>
+</svg>
