@@ -5,6 +5,8 @@ html, body {
     height: 100%;
     font-family: "Rokkitt", serif;
     background: #E8E8E8;
+    color: #4D4D4D;
+    font-size: 18px;
 }
 
 header {
@@ -40,7 +42,7 @@ header .topbar .button {
     font-size: 64px !important;
 }
 
-.titles {
+.title {
     color: #006494;
     font-family: "Kanit", sans-serif;
     font-weight: 10px;
@@ -49,6 +51,11 @@ header .topbar .button {
 .col-third {
     float: left;
     width: 33.333%;
+}
+
+.col-fifth {
+    float: left;
+    width: 20%;
 }
 
 .container {
@@ -66,20 +73,12 @@ header .topbar .button {
     font-size: 32px;
     color: #30526C;
     font-family: "Kanit", sans-serif;
-    font-weight: 8px;
     padding-bottom: 5px;
 }
 
 .subjects-icon {
     margin-right: 15px;
     float: left;
-}
-
-.topics-body {
-    font-size: 18px;
-    color: #404040;
-    font-family: "Rokkit", serif;
-    font-weight: 8px;
 }
 
 footer {
@@ -159,6 +158,7 @@ li {
     width: 10px;
     height: 1em;
     display: inline-block;
+    margin-right: 3px;
 }
 
 .kids {
@@ -182,5 +182,9 @@ li {
 }
 
 .table-margin {
-    margin-left: 63px;
+    margin-left: 64px;
+}
+
+.color-code {
+    width: 39px;
 }
