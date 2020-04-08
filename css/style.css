@@ -36,6 +36,46 @@ header .topbar .button {
     vertical-align: middle;
 }
 
+.jumbo {
+    font-size: 64px !important;
+}
+
+.titles {
+    color: #006494;
+    font-family: "Kanit", sans-serif;
+    font-weight: 10px;
+}
+
+.col-third {
+    float: left;
+    width: 33.333%;
+}
+
+.container {
+    display: block;
+    padding: 16px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.subjects-title {
+    font-size: 32px;
+    color: #30526C;
+    font-family: "Kanit", sans-serif;
+    font-weight: 8px;
+}
+
+.topics-body {
+    font-size: 18px;
+    color: #404040;
+    font-family: "Rokkit", serif;
+    font-weight: 8px;
+}
+
 footer {
     width: 100%;
     height: 80px;
@@ -99,4 +139,20 @@ footer .seidai img {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+li {
+    display: block;
+}
+
+.old-man::before {
+    content: "";
+    border-color: #009933;
+    border-style: solid;
+    border-width: 0 0.3em 0 0;
+    height: 1em;
+    top: 1.3em;
+    left: 0.6em;
+    margin-top: -1em;
+    width: 0.5em;
 }
