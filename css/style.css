@@ -151,15 +151,36 @@ li {
     display: block;
 }
 
-.old-man::before {
-    content: "";
-    border-color: #009933;
-    border-style: solid;
-    border-width: 0 0.3em 0 0;
+.kids,
+.teen,
+.universitary,
+.all,
+.amateur {
+    width: 10px;
     height: 1em;
-    top: 1.3em;
-    left: 0.6em;
-    margin-top: -1em;
-    width: 0.5em;
+    display: inline-block;
 }
 
+.kids {
+    background: #FEB45C;
+}
+
+.teen {
+    background: #FA7921;
+}
+
+.universitary {
+    background: #99C24D;
+}
+
+.all {
+    background: #027BCE;
+}
+
+.amateur {
+    background: #A9589A;
+}
+
+.table-margin {
+    margin-left: 63px;
+}
