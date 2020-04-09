@@ -54,13 +54,23 @@ header .topbar .button {
 }
 
 .col-third {
-    float: left;
     width: 33.333%;
+    display: inline-block;
+}
+
+.col-quarter {
+    width: 25%;
+    display: inline-block;
+}
+
+.col-threequarter {
+    width: 75%;
+    display: inline-block;
 }
 
 .col-fifth {
-    float: left;
     width: 20%;
+    display: inline-block;
 }
 
 .container {
@@ -74,7 +84,7 @@ header .topbar .button {
     clear: both;
 }
 
-.subjects-title {
+.subtitle {
     font-size: 32px;
     color: #30526C;
     font-family: "Kanit", sans-serif;
@@ -83,7 +93,8 @@ header .topbar .button {
 
 .subjects-icon {
     margin-right: 15px;
-    float: left;
+    display: inline-block;
+    height: 48px;
 }
 
 footer {
@@ -192,4 +203,27 @@ li {
 
 .color-code {
     width: 39px;
+}
+
+.float-left {
+    float: left;
+}
+
+.tutor-photo {
+    border-radius: 50%;
+    background: #949494;
+}
+
+.section .button {
+    padding: 10pt;
+    background: #33C1FF;
+    width: auto;
+}
+
+.section .button-holder {
+    margin-top: 24pt;
+}
+
+.drop-down-button {
+    cursor: pointer;
 }
