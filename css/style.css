@@ -9,6 +9,11 @@ html, body {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     position: absolute;
     width: 100%;
