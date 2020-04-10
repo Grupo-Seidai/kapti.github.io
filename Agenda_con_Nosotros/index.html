@@ -1,52 +1,101 @@
 <!doctype html>
 <html lang="en">
-    <head>
-	<meta charset="UTF-8"/>
-	<title>Document</title>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Kapti | Agenda con Nosotros</title>
 
-	<link rel="stylesheet" href="/css/style.css"/>
-	<link rel="stylesheet" href="/css/icons.css"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
-    
-    <body>
-      <header>
-	<div class="topbar">
-	  <div class="button-container">
-	    <a href="/Tutores/" class="button">
-	      Tutores
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/responsive.css"/>
+    <link rel="stylesheet" href="/css/icons.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  
+  <body>
+    <header id="topbar">
+      <a class="logo" href="/">
+        <img class="hide-small" src="/assets/logo.svg"/>
+        <img class="hide-large hide-medium" src="/assets/logoS.svg"/>
+      </a>
+      <div class="topbar">
+        <div class="hide-small hide-medium">
+          <div class="button-container">
+            <a href="/Tutores/" class="button">
+              Tutores
+            </a>
+            <a href="/Agenda_con_Nosotros/" class="button">
+              Agenda con Nosotros
+            </a>
+	    <a href="/Seminarios/" class="button">
+	      Seminarios
 	    </a>
-	    <a href="/Agenda_con_Nosotros/" class="button">
-		      Agenda con Nosotros
-	    </a>
-	    <a href="/Contactanos" class="button">
-	      Contáctanos
-	    </a>
-	    <a href="Acerca_de" class="button">
-	      Acerca de
-	    </a>
-	  </div>
-	</div>
-      </header>
+            <a href="/Contactanos/" class="button">
+              Contáctanos
+            </a>
+            <a href="/Acerca_de/" class="button">
+              Acerca de
+            </a>
+          </div>
+        </div>
+
+        <div class="display-right hide-large">
+          <a id="menu"
+             class="icon material-icons md-36 md-light"
+             href="javascript:void(0)" onclick="openSidebar()">
+            menu
+          </a>
+        </div>
+        
+      </div>
+
+      <nav id="sidebar" class="sidebar hide-large">
+        <a href="/Tutores/" class="item">Tutores</a>
+        <a href="/Agenda_con_Nosotros/" class="item">Agenda con Nosotros</a>
+        <a href="/Seminarios/" class="item">Seminarios</a>
+        <a href="/Contactanos/" class="item">Contáctanos</a>
+        <a href="/Acerca_de/" class="item">Acerca de</a>
+      </nav>
       
-      <div class="section">
-	
+    </header>
+
+    <div class="section">
+       <div class="container title jumbo center">
+        Agenda con Nosotros
+      </div>
+      <form action="" id="formulario_contacto" class="center" method="post" name="cotactános">
+        <label>
+          Nombre completo
+          <input name="Nombre Completo" placeholder="Tu nombre completo" type="text" required/>
+        </label>
+        <label>
+          Número de contacto
+          <input name="Numero contacto" placeholder="Teléfono" type="text" required/>
+        </label>
+        <label>
+          
+        </label>
+      </form>
+    </div>
+    
+    <footer class="display-container">
+      <div class="copyright">
+	<span class="hide-small">Copyright </span>2020 &copy;
+      </div>
+      <div class="center address display-middle">
+	Tel: 3212467343 <br/>
+	Bogotá D.C. Colombia.
       </div>
       
-      <footer class="display-container">
-	<div class="copyright">
-		Copyright 2020 &copy;
-	</div>
-	<div class="center address display-middle">
-	  Tel: 3212467343 <br/>
-	  Bogotá D.C. Colombia.
-	</div>
-	    
-	<div class="seidai">
-		<img src="/assets/Seidai_wh.svg"/>
-		Grupo Seidai
-	</div>
-      </footer>
-    </body>
+      <div class="seidai">
+	<img src="/assets/Seidai_wh.svg"/>
+        <span class="hide-small">
+	  Grupo Seidai
+        </span>
+      </div>
+    </footer>
+    
+    <script src="/js/bar.js"></script>
+  </body>
 </html>

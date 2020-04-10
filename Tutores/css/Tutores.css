@@ -1,0 +1,32 @@
+.filter-button {
+    display: inline-block;    
+    cursor: pointer;    
+}
+
+.filter-button.active .on,
+.filter-button.inactive .off,  
+.Tutor.active,
+.tutor-description.active{
+    display: inline-block;
+}
+
+.filter-button.active .off,
+.filter-button.inactive .on,
+.Tutor.inactive,
+.tutor-description.inactive {
+    display: none;
+}
+
+.Tutor {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    cursor: pointer; 
+}
+
+.filter-names{
+    padding-left: 12px;
+}
+
