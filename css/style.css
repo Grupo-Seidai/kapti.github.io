@@ -200,6 +200,10 @@ li {
     width: 100%;
 }
 
+.complete-h {
+    height: 100%;
+}
+
 @media (min-width: 993px) {
     .col-half {
         width: 50%;
@@ -404,6 +408,21 @@ header .sidebar .item {
 
 
 
-.slideshow{
-    width: 100%;
+.slideshow.active {
+    display: inline-block;
+}
+
+.slideshow.inactive {
+    display: none;
+}
+
+.banner {
+    display: block;
+    padding-top: 116px;
+}
+
+.back-buttons,
+.forward-buttons {
+    background: #8D8D8D77;
+    cursor: pointer;
 }
