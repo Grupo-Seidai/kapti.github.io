@@ -5,15 +5,16 @@
     <title>Kapti | Agenda con Nosotros</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/responsive.css"/>
+    <link rel="stylesheet" href="/css/forms.css"/>
     <link rel="stylesheet" href="/css/icons.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   
-  <body>
+  <body onload="formLimits()">
     <header id="topbar">
       <a class="logo" href="/">
         <img class="hide-small" src="/assets/logo.svg"/>
@@ -61,22 +62,149 @@
     </header>
 
     <div class="section">
-       <div class="container title jumbo center">
+      <div class="container title jumbo center">
         Agenda con Nosotros
       </div>
-      <form action="" id="formulario_contacto" class="center" method="post" name="cotactános">
-        <label>
-          Nombre completo
-          <input name="Nombre Completo" placeholder="Tu nombre completo" type="text" required/>
-        </label>
-        <label>
-          Número de contacto
-          <input name="Numero contacto" placeholder="Teléfono" type="text" required/>
-        </label>
-        <label>
+
+      <div class="container center">
+        <form action="https://formspree.io/mrgaadav" id="formulario_agenda" class="center col-half" method="post" name="Agenda tu tutoría">
+          <div class="container">
+            <div class="col-half float-left">
+              <div class="subtitle xlarge">
+                Nombre completo
+              </div>
+              <input class="customize-input input-twothirds" name="Nombre Completo" type="text" required/>
+            </div>
+
+
+            <div class="col-half float-left">
+              <div class="subtitle xlarge">
+                Número de contacto
+              </div>
+              <input class="customize-input input-twothirds" name="Numero contacto"  type="tel" required/>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="col-half float-left">
+              <div class="subtitle xlarge">
+                ¿En qué área necesitas apoyo?
+              </div>
+              
+              <select id="area-input" class="customize-input" name="Área" required>
+                <option value="" selected disabled hidden>Áreas</option>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Física">Física</option>
+                <option value="Estadística">Estadística</option>
+                <option value="Biología">Biología</option>
+                <option value="Programación">Programación</option>
+                <option value="Lecto-Escritura">Lecto-Escritura</option>
+                <option value="Química">Química</option>
+                <option value="Ciencias_Humanas">Ciencias Humanas</option>
+              </select>
+            </div>
+            
+            <div class="col-half">
+              <div class="subtitle xlarge">
+                ¿En qué tema necesitas apoyo?
+              </div>
+                <select class="customize-input" name="Tema" required>
+                  <option value="" selected disabled hidden>Temas</option>
+                  <option value="Aritmética" class="temas inactive Matemáticas">Aritmética</option>
+                  <option value="Álgebra" class="temas inactive Matemáticas">Álgebra</option>
+                  <option value="Trigonometría" class="temas inactive Matemáticas">Tronoétría</option>
+                  <option value="Geometría Elemental" class="temas inactive Matemáticas">Geometría Elemental</option>
+                  <option value="Álgebra Lineal" class="temas inactive Matemáticas">Áegbra Lineal</option>
+                  <option value="Pre-Cáculo" class="temas inactive Matemáticas">Pre-Cálculo</option>
+                  <option value="Lógica Matemática" class="temas inactive Matemáticas">Lógica MatemAtica</option>
+                  <option value="Cálculo Diferencial" class="temas inactive Matemáticas">Cálculo Diferencial</option>
+                  <option value="Cálculo Integral" class="temas inactive Matemáticas">Cálculo Integral</option>
+                  <option value="Cálculo Vectorial" class="temas inactive Matemáticas">Cálculo Vectorial o Multivariado</option>
+                  <option value="Cálculo EDO-P" class="temas inactive Matemáticas">Cálculo de Ecuaciones Diferenciaes Ordinarias y Parciales</option>
+                  <option value="Cálculo en Variable Compleja" class="temas inactive Matemáticas">Cálculo en Variable Compleja</option>
+                  <option value="Teoría de Grupos" class="temas inactive Matemáticas">Teoría de Grupos</option>
+                  <option value="Física Matemática Básica" class="temas inactive Física">Física Mátemática Básica</option>
+                  <option value="Mecánica Newtoniana" class="temas inactive Física">Mecánica Newtoniana (Cinemática, Dinámica y Cuerpo Rigido)</option>
+                  <option value="Oscilaciones y Ondas" class="temas inactive Física">Oscilaciones y Ondas</option>
+                  <option value="Fundamentos de Óptica" class="temas inactive Física">Fundamentos de Óptica</option>
+                  <option value="Mecánica Analítica" class="temas inactive Física">Mecánica Analítica</option>
+                  <option value="Electricidad y Magnetísmo" class="temas inactive Física">Electricidad y Magnetísmo</option>
+                  <option value="Electrodinámica" class="temas inactive Física">Electrodinámica</option>
+                  <option value="Termodinámica" class="temas inactive Física">Termodinámica</option>
+                  <option value="Relatividad Especial" class="temas inactive Física">Relatividad Especial</option>
+                  <option value="Mecánica Cuántica" class="temas inactive Física">Mecánica Cuántica</option>
+                  <option value="Estadística Fundamental" class="temas inactive Estadística">Estadística Fundamental</option>
+                  <option value="Probabilidad" class="temas inactive Estadística">Probabilidad</option>
+                  <option value="Biología Primaria" class="temas inactive Biología">Biología Educación Básica Primaria</option>
+                  <option value="Biología Secundaria y media" class="temas inactive Biología">Biología Educación Básica Secundaria y media</option>
+                  <option value="Scratch" class="temas inactive Programación">Introducción a la programación infantil con Scratch</option>
+                  <option value="Creación de Páginas web con HTML, CSS y JavaScript" class="temas inactive Programación">Creación de Páginas Web con HTML, CSS y JavaScript</option>
+                  <option value="Java" class="temas inactive Programación">Java</option>
+                  <option value="C++" class="temas inactive Programación">C++</option>
+                  <option value="PHP" class="temas inactive Programación">PHP</option>
+                  <option value="Phyton" class="temas inactive Programación">Python</option>
+                  <option value="Visual Basic" class="temas inactive Programación">Visual Basic</option>
+                  <option value="LaTeX" class="temas inactive Programación">LaTeX</option>
+                  <option value="Office" class="temas inactive Programación">Office</option>
+                  <option value="Visual Basic for Applications" class="temas inactive Programación">Visual Basic for Applications</option>
+                  <option value="Apoyo niños" class="temas inactive Lecto-Escritura">Apoyo en Lectura y Escritura para niños</option>
+                  <option value="Apoyo adolescentes" class="temas inactive Lecto-Escritura">Apoyo en Lectura y Escritura para adolescentes</option>
+                  <option value="Apoyo Adultos y Aficionados" class="temas inactive Lecto-Escritura">Apoyo en Lectura y Escritura para Adultos y Aficionados</option>
+                  <option value="Química Inorgánica" class="temas inactive Química">Química Inorgánica</option>
+                  <option value="Química Orgánica" class="temas inactive Química">Química Orgánica</option>
+                  <option value="Inglés" class="temas inactive Ciencias_Humanas">Inglés</option>
+                </select>
+            </div>
+
+          </div>
           
-        </label>
-      </form>
+          <div class="container">
+            <div class="subtitle xlarge">
+              Por favor escribe de forma detallada el subtema en cual necesitas profundizar
+            </div>
+            <textarea class="customize-input customize-text-area"  name="Subtema" rows="3" placeholder="Ej: Sumas y restas en Aritmética"></textarea required>
+          </div>
+          
+          <div class="container">
+          <div class="subtitle xlarge">
+            ¿Qué tutor recomiendas?
+          </div>
+          <input class="customize-input input-twothirds"  name="Tutor" type="text" required/>
+          </div>
+
+          <div class="container">
+          <div class="subtitle xlarge">
+            ¿Qué actividad quieres que desarrolle tu tutor?
+          </div>
+          <div class="left col-half">
+            <input name="Repaso" type="checkbox" value="Repaso"/>
+            <label for="Repaso">Quiero que me ayude a entender los temas y repasarlos</label><br/>
+            <input name="Examen" type="checkbox" value="Examen"/>
+            <label for="Examen">Quiero que me ayude a estudiar para un examen</label><br/>
+            <input name="Taller o tarea" type="checkbox" value="Taller o tarea"/>
+            <label for="Taller o tarea">Quiero que me ayude a resolver un taller o una tarea</label><br/>
+            <input name="Otro" type="checkbox" value="Otro"/>
+            <label for="Otro">Otro: <input class="customize-input input-twothirds" name="Otro" type="text"/></label>
+         </div>
+          </div>
+
+          <div class="container">
+            <div class="subtitle xlarge">
+              Escoge fecha y hora de tu tutoría
+            </div>
+            <div class="subtitle">Ten en cuenta que las tutorías duran mínimo una hora y nuestro horario es de 8:00 a.m. a 6:00 p.m.</div>
+            <input id="date" class="customize-input" name="Fecha" type="date"/> <input id="time" class="customize-input" name="Hora" type="time"/>
+          </div>
+          
+          <div class="container">
+            <div class="subtitle">
+              Envía archivos que pueden ser útiles en la tutoría (Talleres, notas, quices y examenes anteriores) antes de tomarla, al correo <b>kapti.tutorias@gmail.com</b>
+            </div>
+          </div>
+          
+          <input class="customize-input" type="submit"/>
+        </form>
+      </div>
     </div>
     
     <footer class="display-container">
@@ -97,5 +225,6 @@
     </footer>
     
     <script src="/js/bar.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

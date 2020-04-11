@@ -406,7 +406,9 @@ header .sidebar .item {
     -ms-transform: translate(-50%,0%);
 }
 
-
+.left {
+    text-align: left;
+}
 
 .slideshow.active {
     display: inline-block;
@@ -419,10 +421,16 @@ header .sidebar .item {
 .banner {
     display: block;
     padding-top: 116px;
+    height: 595.3px;
 }
 
 .back-buttons,
 .forward-buttons {
     background: #8D8D8D77;
     cursor: pointer;
+}
+
+#slideshow {
+    box-shadow: 0 0 40px -10px #000000;
+    height: 595.3px;
 }

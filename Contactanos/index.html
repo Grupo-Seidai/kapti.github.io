@@ -5,9 +5,10 @@
     <title>Kapti | Contactanos</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    
     <link rel="stylesheet" href="/css/style.css"/>
     <link rel="stylesheet" href="/css/responsive.css"/>
+    <link rel="stylesheet" href="/css/forms.css"/>
     <link rel="stylesheet" href="/css/icons.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -59,14 +60,64 @@
       </nav>
       
     </header>
-    
+
     <div class="section">
-      <form action="" id="formulario_contacto" placeholder="Tu nombre completo" class="" method="post" name="cotactános">
-        <label>
-          Nombre completo
-          <input name="Nombre Completo" type="text"https://la.mathworks.com/products/image.html#explore required/>
-        </label>
-      </form>
+      <div class="container title jumbo center">
+        Contáctanos
+      </div>
+      
+
+      <div class="container center">
+        <div class="col-half float-left">
+          <div class="container">
+            <div class="subtitle xxlarge">Si tienes alguna Pregunta, Queja, Reclamo o Sugerencia (PQRS), no dudes en escribirnos, estaremos encantados de atenderte.</div>
+          </div>
+          <div class="container">
+            <div class="subtitle xxlarge">Tambien nos puedes contactar a través de:</div>
+          </div>
+          <div class="container left col-half subtitle xlarge">
+            <ul>
+              <li><b>Correo:</b> kapti.tutorias@gmail.com</li>
+              <li><b>Cel:</b> 3212467343</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-half float-left">
+          <form action="https://formspree.io/xgellqqz" id="formulario_contacto" class="center" method="post" name="Contáctanos">
+            <div class="container">
+              <div class="subtitle xlarge">
+                Nombre completo
+              </div>
+              <input class="customize-input input-complete" name="Nombre Completo" type="text" required/>
+            </div>
+
+            
+            <div class="container">
+              <div class="subtitle xlarge">
+                Número de contacto
+              </div>
+              <input class="customize-input input-complete" name="Numero contacto"  type="tel" required/>
+            </div>
+
+            
+            <div class="container">
+              <div class="subtitle xlarge">
+                Correo electrónico
+              </div>
+              <input class="customize-input input-complete" name="Numero contacto"  type="email" required/>
+            </div>
+            
+            <div class="container">
+              <div class="subtitle xlarge">
+                Tu mensaje
+              </div>
+              <textarea class="customize-input customize-text-area"  name="PQRS" rows="5"></textarea required>
+            </div>
+            
+            <input class="customize-input" type="submit"/>
+          </form>
+        </div>
+      </div>
     </div>
     
     <footer class="display-container">
