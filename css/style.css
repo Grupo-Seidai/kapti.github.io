@@ -431,6 +431,6 @@ header .sidebar .item {
 }
 
 #slideshow {
-    box-shadow: 0 0 40px -10px #000000;
-    height: 595.3px;
+    /*box-shadow: 0 0 40px -10px #000000;*/
+    /*height: 595.3px;*/
 }
