@@ -209,7 +209,7 @@ li {
         width: 50%;
         display: inline-block;
     }
-    
+
     .col-third {
         width: 33.333%;
         display: inline-block;
@@ -236,7 +236,7 @@ li {
         width: 50%;
         display: inline-block;
     }
-    
+
     .col-third {
         width: 33.333%;
         display: inline-block;
@@ -428,9 +428,4 @@ header .sidebar .item {
 .forward-buttons {
     background: #8D8D8D77;
     cursor: pointer;
-}
-
-#slideshow {
-    box-shadow: 0 0 40px -10px #000000;
-    height: 595.3px;
 }
