@@ -37,17 +37,17 @@ for (div of filterButtons){
 }
 
 function updateFilters () {
-    var tutors = document.getElementsByClassName("Tutor");
+    var seminarios = document.getElementsByClassName("Seminario");
 
     var card;
 
-    for (card of tutors){
+    for (card of seminarios){
         var classes = card.classList;
 
         var current;
 
         for (current of classes) {
-            if (current == "Tutor" || current == "float-left" || current == "col-quarter" || current == "center" || current == "active" || current == "inactive"){
+            if (current == "Seminario" || current == "float-left" || current == "col-quarter" || current == "center" || current == "active" || current == "inactive"){
                 continue;
             }
 
@@ -75,6 +75,7 @@ for (div of infoButtons) {
 
         console.log(parent)
         console.log(description)
+        console.log(card)
 
         if (description.classList.contains("active")){
             description.classList.remove("active");
@@ -87,10 +88,10 @@ for (div of infoButtons) {
             description.classList.add("active");
             description.classList.remove("inactive");
             description.classList.add("col-quarter");
-            parent.classList.add("complete");
             parent.classList.remove("col-quarter");
-            card.classList.add("col-quarter");
+            parent.classList.add("complete");
             card.classList.remove("complete");
+            card.classList.add("col-quarter");
         }
 
     })

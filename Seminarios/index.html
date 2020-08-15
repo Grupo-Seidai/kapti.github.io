@@ -1,86 +1,580 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <title>Kapti | Seminarios</title>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Kapti | Seminarios</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="/css/style.css"/>
-    <link rel="stylesheet" href="/css/responsive.css"/>
-    <link rel="stylesheet" href="/css/icons.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  
-  <body>
-    <header id="topbar">
-      <a class="logo" href="/">
-        <img class="hide-small" src="/assets/logo.svg"/>
-        <img class="hide-large hide-medium" src="/assets/logoS.svg"/>
-      </a>
-      <div class="topbar">
-        <div class="hide-small hide-medium">
-          <div class="button-container">
-            <a href="/Tutores/" class="button">
-              Tutores
-            </a>
-            <a href="/Agenda_con_Nosotros/" class="button">
-              Agenda con Nosotros
-            </a>
-	    <a href="/Seminarios/" class="button">
-	      Seminarios
-	    </a>
-            <a href="/Contactanos/" class="button">
-              Contáctanos
-            </a>
-            <a href="/Acerca_de/" class="button">
-              Acerca de
-            </a>
-          </div>
-        </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="display-right hide-large">
-          <a id="menu"
-             class="icon material-icons md-36 md-light"
-             href="javascript:void(0)" onclick="openSidebar()">
-            menu
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="/css/responsive.css"/>
+  <link rel="stylesheet" href="/Seminarios/css/Seminarios.css"/>
+  <link rel="stylesheet" href="/css/icons.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit&family=Rokkitt:wght@300&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <header id="topbar">
+    <a class="logo" href="/">
+      <img class="hide-small" src="/assets/logo.svg"/>
+      <img class="hide-large hide-medium" src="/assets/logoS.svg"/>
+    </a>
+    <div class="topbar">
+      <div class="hide-small hide-medium">
+        <div class="button-container">
+          <a href="/Tutores/" class="button">
+            Tutores
+          </a>
+          <a href="/Agenda_con_Nosotros/" class="button">
+            Agenda con Nosotros
+          </a>
+          <a href="/Seminarios/" class="button">
+            Seminarios
+          </a>
+          <a href="/Contactanos/" class="button">
+            Contáctanos
+          </a>
+          <a href="/Acerca_de/" class="button">
+            Acerca de
           </a>
         </div>
-        
       </div>
 
-      <nav id="sidebar" class="sidebar hide-large">
-        <a href="/Tutores/" class="item">Tutores</a>
-        <a href="/Agenda_con_Nosotros/" class="item">Agenda con Nosotros</a>
-        <a href="/Seminarios/" class="item">Seminarios</a>
-        <a href="/Contactanos/" class="item">Contáctanos</a>
-        <a href="/Acerca_de/" class="item">Acerca de</a>
-      </nav>
-      
-    </header>
-    
-    <div class="section">
-      
+      <div class="display-right hide-large">
+        <a id="menu"
+        class="icon material-icons md-36 md-light"
+        href="javascript:void(0)" onclick="openSidebar()">
+        menu
+      </a>
     </div>
-    
-    <footer class="display-container">
-      <div class="copyright">
-	<span class="hide-small">Copyright </span>2020 &copy;
+
+  </div>
+
+  <nav id="sidebar" class="sidebar hide-large">
+    <a href="/Tutores/" class="item">Tutores</a>
+    <a href="/Agenda_con_Nosotros/" class="item">Agenda con Nosotros</a>
+    <a href="/Seminarios/" class="item">Seminarios</a>
+    <a href="/Contactanos/" class="item">Contáctanos</a>
+    <a href="/Acerca_de/" class="item">Acerca de</a>
+  </nav>
+
+</header>
+
+<div class="section">
+
+  <!-- Seminarios -->
+  <!-- Título -->
+  <div class="container">
+    <div class="jumbo title center">Seminarios</div>
+  </div>
+
+
+  <div class="containter">
+    <!-- Filtro -->
+    <div class="container">
+      <div class="filter center">
+
+        <div id="filter-all" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/filter.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/infilter.svg"/>
+          </div>
+
+        </div>
+
+        <div id="math" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/math.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inmath.svg"/>
+          </div>
+
+        </div>
+
+        <div id="physics" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/physics.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inphysics.svg"/>
+          </div>
+
+        </div>
+
+        <div id="statistics" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/statistics.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/instatistics.svg"/>
+          </div>
+
+        </div>
+
+        <div id="biology" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/biology.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inbiology.svg"/>
+          </div>
+
+        </div>
+
+        <div id="programming" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/programming.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inprogramming.svg"/>
+          </div>
+
+        </div>
+
+        <div id="lecto" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/lecto.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inlecto.svg"/>
+          </div>
+
+        </div>
+
+        <div id="chemistry" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/chemistry.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inchemistry.svg"/>
+          </div>
+
+        </div>
+
+
+        <div id="humanities" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/humanities.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/inhumanities.svg"/>
+          </div>
+
+        </div>
+
+
+        <div id="seminario" class="filter-button active">
+
+          <div class="subjects-icon on">
+            <img src="/assets/comodin.svg"/>
+          </div>
+
+
+          <div class="subjects-icon off">
+            <img src="/assets/incomodin.svg"/>
+          </div>
+
+        </div>
+
       </div>
-      <div class="center address display-middle">
-	Tel: 3212467343 <br/>
-	Bogotá D.C. Colombia.
+    </div>
+
+  </div>
+
+  <div class="container">
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <div class="seminario-image center display-container">
+            <img class="seminario-image-src display-middle" src="/assets/LaTeX_logo.svg"/>
+          </div>
+          <div class="subtitle xlarge">Introducción a Latex</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/programming.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
       </div>
-      
-      <div class="seidai">
-	<img src="/assets/Seidai_wh.svg"/>
-        <span class="hide-small">
-	  Grupo Seidai
-        </span>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Estamos planeando los seminarios.
+        <br>
+        Proximamente mas información.
       </div>
-    </footer>
-    
-    <script src="/js/bar.js"></script>
-  </body>
+
+    </div>
+
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xlarge">Ciencias para niños</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+    <!-- Inicio Seminarios -->
+    <div class="Seminario float-left math physics active center col-quarter">
+      <div class="float-left seminario-card complete">
+        <div class="container center display-containter">
+
+          <img class="seminario-image" src="/assets/seminario.svg"/>
+          <div class="subtitle xxlarge">Seminario</div>
+
+          <div class="stamps">
+
+            <div class="subjects-icon">
+              <img src="/assets/math.svg"/>
+            </div>
+
+            <div class="subjects-icon">
+              <img src="/assets/physics.svg"/>
+            </div>
+
+          </div>
+
+
+          <span class="material-icons info md-36">
+            info
+          </span>
+
+        </div>
+      </div>
+
+      <div class="col-threequarter float-left seminario-description inactive">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, venenatis quam cum sapien quis phasellus arcu, taciti quisque mauris ut dignissim vestibulum. Nisl dis litora porta neque vestibulum curae potenti hac, venenatis hendrerit lacinia montes leo eu aptent feugiat convallis, varius nunc curabitur ligula fringilla dictum mauris. Nec orci id elementum taciti facilisis, litora habitasse tellus habitant venenatis eu, libero donec semper montes.
+        <br/>
+        Conubia donec eget a mus nullam varius euismod nisl viverra, interdum augue vestibulum vehicula taciti commodo mollis blandit, faucibus velit vel tempus dictum inceptos magna eu. Volutpat montes odio ad risus nulla accumsan penatibus egestas donec cubilia orci, etiam scelerisque rutrum quisque tellus cum viverra auctor mollis velit. Penatibus facilisis gravida luctus etiam sociis fames vel suscipit, inceptos montes risus diam taciti cubilia torquent, fusce egestas quam vitae sodales viverra vivamus.
+      </div>
+
+    </div>
+    <!-- Fin Seminario -->
+
+  </div>
+</div>
+
+<footer class="display-container">
+  <div class="copyright">
+    <span class="hide-small">Copyright </span>2020 &copy;
+  </div>
+  <div class="center address display-middle">
+    Tel: 3212467343 <br/>
+    Bogotá D.C. Colombia.
+  </div>
+
+  <div class="seidai">
+    <img src="/assets/Seidai_wh.svg"/>
+    <span class="hide-small">
+      Grupo Seidai
+    </span>
+  </div>
+</footer>
+
+<script src="js/display.js"></script>
+<script src="/js/bar.js"></script>
+</body>
 </html>

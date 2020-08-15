@@ -1,0 +1,44 @@
+.filter-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.filter-button.active .on,
+.filter-button.inactive .off,
+.Seminario.active,
+.seminario-description.active{
+  display: inline-block;
+}
+
+.filter-button.active .off,
+.filter-button.inactive .on,
+.Seminario.inactive,
+.seminario-description.inactive {
+    display: none;
+}
+
+.Seminario {
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    cursor: pointer;
+}
+
+.filter-names{
+    padding-left: 12px;
+}
+
+.seminario-image {
+    border-radius: 5%;
+    background: #afafaf;
+    width: 150px;
+    min-height: 150px;
+    display: inline-block;
+}
+
+.seminario-image-src {
+  max-width: 150px;
+  max-height: 150px;
+}

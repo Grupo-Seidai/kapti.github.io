@@ -1,10 +1,10 @@
 .filter-button {
-    display: inline-block;    
-    cursor: pointer;    
+    display: inline-block;
+    cursor: pointer;
 }
 
 .filter-button.active .on,
-.filter-button.inactive .off,  
+.filter-button.inactive .off,
 .Tutor.active,
 .tutor-description.active{
     display: inline-block;
@@ -23,10 +23,9 @@
 }
 
 .info {
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .filter-names{
     padding-left: 12px;
 }
-
